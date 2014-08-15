@@ -1,79 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Article">
+<head>
+	<title>Indian Independence Jets - by Akshat Mittal</title>
+	<!-- Just ignore these... -->
+	<link rel="author" href=" https://plus.google.com/+AkshatMittal/posts"/>	
+	<meta property="og:title" content="Indian Independence Jets" /> 
+	<meta property="og:type" content="article" /> 
+	<meta property="og:url" content="http://akshatmittal.github.io/independencejets/" />
+	<meta property="og:site_name" content="Akshat Mittal" />
+	<meta property="fb:admins" content="100000581280466" />
+	<!-- Don't ignore from here... -->
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Independencejets : Animated Independence Jets for Websites">
+	<style type="text/css">
+	@import url(reset.css);
+	@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+	a {
+		text-decoration: none;
+		color: #000;
+		border-bottom: dotted 1px #000;
+	}
+	body {
+		font-family: 'Roboto', sans-serif;
+		background: #00C5FF;
+	}
+	#mast {
+		width: 100%;
+		height: 80px;
+		background: white;
+		font-size: 65px;
+		text-align: center;
+		box-shadow: 0 0 7px #000;
+		position: fixed;
+		top:0;
+		right: 0;
+		left: 0;
+	}
+	#con {
+		max-width: 900px;
+		width: 100%;
+		background: white;
+		margin: 0 auto;
+		box-shadow: 0 0 5px #000;
+		padding: 10px;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	.space {
+		height: 200px;
+		position: relative;
+	}
+	.space_small {
+		height: 100px;
+		position: relative;
+	}
+	.space_tiny {
+		height: 50px;
+		position: relative;
+	}
+	code.inc {
+		padding: 2px;
+		border:solid 1px #000;
+	}
+	#foot {
+		position: fixed;
+		width: 100%;
+		bottom:0;
+		right: 0;
+		left: 0;
+		text-align: center;
+		background: white;
+		padding: 3px;
+		box-shadow: 0 0 7px #000;
+	}
+	</style>
+	<script type="text/javascript" src="jets.js"></script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1473140929606808&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+	<div id="mast">Independence Jets</div>
+	<div class="space"></div>
+	<div id="con">
+		Simple animated jets that go around the screen showing Indian flag as smoke trails behind the jets. You can see them working here on this page or just <a href="try.html">try</a> them on any website you like.<br><br><br>
+		These jets can be implemented on any website, just include the <code>jets.js</code> file and initialize at the end of the document.<br><br>
+		Include <code>jets.js</code> in <code>&lt;head&gt;</code>:<br><br>
+		<code class="inc">&lt;script src="http://akshatmittal.github.io/independencejets/jets.js" /&gt;</code><br><br>
+		And initialize just before (closing) <code>&lt;/body&gt;</code><br><br>
+		<code class="inc">&lt;script&gt;Independence.start("http://i.imgur.com/eoQQJet.png");&lt;/script&gt;</code><br><br>
+		Note that the image used for jets is specified when initializing, thus you can use whatever image you want. I found an image on the web and 
+		<a href="http://i.imgur.com/eoQQJet.png">uploaded it to imgur</a>, looks like this:<br><br><img alt="Jet" src="http://i.imgur.com/eoQQJet.png"><br><br>
+		You can also stop them using JS by 'destroying' them, like this:<br><br>
+		<code class="inc">Independence.destroy();</code><br><br>
+		You can create as many such instances as you want on a single page, though I don't recommend creating more than 2 on a page. This <strong>works</strong> on mobile, <span title="This website looks bad on mobile, trust me.">unlike this website<span>. <br><br>
+		You can use it freely on any website you like. I'll appreciate if you credit back with a link. Thanks.
+	</div>
+	<div class="space_tiny"></div>
+	<div id="con">Share!<br><br>
+	<div class="fb-like" data-href="http://akshatmittal.github.io/independencejets/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://akshatmittal.github.io/independencejets/" data-text="Indian Independence Jets" data-via="itsreallyakshat" data-count="none">Tweet</a>
+	<a href="https://twitter.com/itsreallyakshat" class="twitter-follow-button" data-show-count="false">Follow @itsreallyakshat</a>
+	<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/114260244105928483584" data-rel="author"></div>
+	</div>
+	<div class="space_small"></div>
+	<div id="foot">Made with <span style="color:#FF69B4">&lt;3</span> by Akshat Mittal</div>
+	<script type="text/javascript">
+	Independence.start("http://i.imgur.com/eoQQJet.png");
+	</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  ga('create', 'UA-50190232-1', 'auto');
+  ga('send', 'pageview');
 
-    <title>Independencejets</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/akshatmittal/independencejets">View on GitHub</a>
-
-          <h1 id="project_title">Independencejets</h1>
-          <h2 id="project_tagline">Animated Independence Jets for Websites</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/akshatmittal/independencejets/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/akshatmittal/independencejets/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Independencejets maintained by <a href="https://github.com/akshatmittal">akshatmittal</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</script>
+</body>
 </html>
